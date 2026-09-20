@@ -1,0 +1,119 @@
+{
+  "repo": "jarvis-rebuild",
+  "commit": "06b9ada",
+  "commitFull": "06b9ada752c162da834502c5bc39c4d4ff6fc70f",
+  "branch": "claude/qa-layer",
+  "dirty": false,
+  "onMain": false,
+  "startedAt": "2026-09-20T23:21:23.553Z",
+  "durationMs": 302019,
+  "result": "pass",
+  "stagesNotRun": 0,
+  "stages": [
+    {
+      "name": "core-types",
+      "result": "pass",
+      "ms": 2153
+    },
+    {
+      "name": "core-tests",
+      "result": "pass",
+      "ms": 1554,
+      "counts": {
+        "pass": 95,
+        "fail": 0,
+        "skipped": 0,
+        "todo": 0,
+        "filesOnDisk": 4,
+        "filesInResults": 4,
+        "filesWithTests": 4
+      },
+      "skippedPerFile": {},
+      "filesNotLoaded": [],
+      "filesWithNoTests": [],
+      "failing": [],
+      "problems": []
+    },
+    {
+      "name": "app-types",
+      "result": "pass",
+      "ms": 53943
+    },
+    {
+      "name": "app-lint",
+      "result": "pass",
+      "ms": 12538,
+      "warnings": 41
+    },
+    {
+      "name": "app-tests",
+      "result": "pass",
+      "ms": 227951,
+      "counts": {
+        "pass": 6490,
+        "fail": 0,
+        "skipped": 5,
+        "todo": 0,
+        "filesOnDisk": 566,
+        "filesInResults": 566,
+        "filesWithTests": 566
+      },
+      "skippedPerFile": {
+        "jarvis-app/tools/ai-harness.test.ts": 5
+      },
+      "filesNotLoaded": [],
+      "filesWithNoTests": [],
+      "failing": [],
+      "problems": []
+    },
+    {
+      "name": "app-build",
+      "result": "pass",
+      "ms": 3341
+    },
+    {
+      "name": "app-legal",
+      "result": "pass",
+      "ms": 280,
+      "regenerated": [],
+      "problems": []
+    },
+    {
+      "name": "house",
+      "result": "pass",
+      "findings": [],
+      "baselined": {
+        "docs/audit-page.html": 49,
+        "docs/ADHD_VISUAL_AUDIT_2026_08_21.md": 49,
+        "docs/VISUAL_DESIGN_AUDIT_2026_08_21.md": 36,
+        "jarvis-app/src/messages/cleanup.test.ts": 14,
+        "docs/AUDIT_2026_09_11_REMAINING.md": 9,
+        "jarvis-app/vite.config.ts": 2,
+        "jarvis-app/src/laws/laws.test.ts": 2,
+        "jarvis-app/src/connections/google/decode.test.ts": 2,
+        "docs/WORKFLOW_AND_GATE.md": 2,
+        "jarvis-app/src/tasks/screens/RemindersPage.test.tsx": 1,
+        "jarvis-app/src/laws/README.md": 1,
+        "jarvis-app/src/events/completions.test.ts": 1,
+        "jarvis-app/src/decisions/decisions.test.ts": 1,
+        "Claude outputs/JARVIS_HANDOFF_2026_09_08.md": 127,
+        "jarvis-core/supabase/migrations/0017_email_opens.sql": 1
+      },
+      "baselineTotal": 297,
+      "burndown": [],
+      "touchedFiles": 10
+    }
+  ],
+  "manual": {
+    "checklist": "qa/checklists/2026-09-20-qa-layer.md",
+    "checklistCommit": "98a0aaf",
+    "checklistSays": "pass",
+    "result": "pass",
+    "reason": "2026-09-20-qa-layer.md covers this commit and says pass"
+  },
+  "preview": {
+    "applicable": false,
+    "reason": "no screen or stylesheet touched",
+    "files": []
+  }
+}
