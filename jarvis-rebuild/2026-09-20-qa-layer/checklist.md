@@ -20,7 +20,7 @@ jarvis-rebuild/ in basecode-qa, BEFORE any push code. Do not combine them."
 | 4 | Plant a spec that throws on import in jarvis-core, rerun | Tests stage fails and names the file, later stages do not run | "1 failing", "1 test file(s) ran no tests: jarvis-core/tests/zz-throws.spec.ts", the failed-as-a-whole-file line with the import error, "stopped early, 6 stage(s) not run". Removed, green again | yes |
 | 5 | Skipped tests | Match the baseline exactly per file | 5 in tools/ai-harness.test.ts, `describe.skipIf(!LIVE)`, baselined with the reason. Any sixth fails the stage | yes |
 | 6 | Confirm no env file is tracked and no secret literal exists | Nothing but `.env.example` | `git ls-files` has `jarvis-app/.env.example` only, allowed by name; no secret shaped literal in 1632 tracked text files | yes |
-| 7 | Commit, run clean, publish | `dirty: false`, manual `pass`, folder `jarvis-rebuild/2026-09-20-qa-layer/` in basecode-qa | see Notes | see Notes |
+| 7 | Commit, run clean, publish | `dirty: false`, manual `pass`, folder `jarvis-rebuild/2026-09-20-qa-layer/` in basecode-qa | All eight stages PASS in 302s, `dirty: false`, `onMain: false`, manual `pass` "covers this commit and says pass", scan clean, published with report.json, checklist.md, gaps.md | yes |
 
 ## The standing rules
 

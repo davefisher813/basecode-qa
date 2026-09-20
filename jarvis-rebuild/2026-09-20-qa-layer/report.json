@@ -1,24 +1,24 @@
 {
   "repo": "jarvis-rebuild",
-  "commit": "06b9ada",
-  "commitFull": "06b9ada752c162da834502c5bc39c4d4ff6fc70f",
+  "commit": "190be7b",
+  "commitFull": "190be7b189d4511bed36a739ada948bb2e29e66b",
   "branch": "claude/qa-layer",
   "dirty": false,
   "onMain": false,
-  "startedAt": "2026-09-20T23:21:23.553Z",
-  "durationMs": 302019,
+  "startedAt": "2026-09-20T23:26:44.607Z",
+  "durationMs": 302546,
   "result": "pass",
   "stagesNotRun": 0,
   "stages": [
     {
       "name": "core-types",
       "result": "pass",
-      "ms": 2153
+      "ms": 1957
     },
     {
       "name": "core-tests",
       "result": "pass",
-      "ms": 1554,
+      "ms": 1510,
       "counts": {
         "pass": 95,
         "fail": 0,
@@ -37,18 +37,18 @@
     {
       "name": "app-types",
       "result": "pass",
-      "ms": 53943
+      "ms": 52036
     },
     {
       "name": "app-lint",
       "result": "pass",
-      "ms": 12538,
+      "ms": 12877,
       "warnings": 41
     },
     {
       "name": "app-tests",
       "result": "pass",
-      "ms": 227951,
+      "ms": 230103,
       "counts": {
         "pass": 6490,
         "fail": 0,
@@ -69,7 +69,7 @@
     {
       "name": "app-build",
       "result": "pass",
-      "ms": 3341
+      "ms": 3535
     },
     {
       "name": "app-legal",
