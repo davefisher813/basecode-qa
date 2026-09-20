@@ -3,11 +3,11 @@
   "version": "3.12.0",
   "commit": "6e2c8d4",
   "commitFull": "6e2c8d4bbdab6ee26136eace59e0c1cd9b8f5c13",
-  "branch": "claude/new-session-gsdk24",
+  "branch": "main",
   "dirty": false,
-  "onMain": false,
-  "startedAt": "2026-09-20T21:35:56.971Z",
-  "durationMs": 21625,
+  "onMain": true,
+  "startedAt": "2026-09-20T21:36:25.645Z",
+  "durationMs": 21776,
   "result": "pass",
   "stagesNotRun": 0,
   "allowlistFired": [],
@@ -52,15 +52,15 @@
         "healthStatus": 200,
         "version": "3.12.0",
         "familyStore": "memory",
-        "ms": 1791
+        "ms": 1792
       },
       "errors": [],
       "warnings": [
-        "third party deprecation, recorded not failed: (node:1567) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead."
+        "third party deprecation, recorded not failed: (node:2129) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead."
       ],
       "deprecations": [
         {
-          "line": "(node:1567) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.",
+          "line": "(node:2129) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.",
           "ours": false
         }
       ],
@@ -75,7 +75,7 @@
       },
       "baselineTotal": 8,
       "burndown": [],
-      "touchedFiles": 1
+      "touchedFiles": 0
     },
     {
       "name": "types",
