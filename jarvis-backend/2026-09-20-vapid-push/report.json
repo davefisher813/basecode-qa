@@ -1,13 +1,13 @@
 {
   "repo": "jarvis-backend",
   "version": "3.12.0",
-  "commit": "7148a0f",
-  "commitFull": "7148a0faf2a54cc9282c8435391ddfa28bf1f5ec",
+  "commit": "6e2c8d4",
+  "commitFull": "6e2c8d4bbdab6ee26136eace59e0c1cd9b8f5c13",
   "branch": "claude/new-session-gsdk24",
   "dirty": false,
   "onMain": false,
-  "startedAt": "2026-09-20T21:32:47.754Z",
-  "durationMs": 22412,
+  "startedAt": "2026-09-20T21:35:56.971Z",
+  "durationMs": 21625,
   "result": "pass",
   "stagesNotRun": 0,
   "allowlistFired": [],
@@ -52,15 +52,15 @@
         "healthStatus": 200,
         "version": "3.12.0",
         "familyStore": "memory",
-        "ms": 1590
+        "ms": 1791
       },
       "errors": [],
       "warnings": [
-        "third party deprecation, recorded not failed: (node:936) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead."
+        "third party deprecation, recorded not failed: (node:1567) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead."
       ],
       "deprecations": [
         {
-          "line": "(node:936) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.",
+          "line": "(node:1567) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.",
           "ours": false
         }
       ],
@@ -75,7 +75,7 @@
       },
       "baselineTotal": 8,
       "burndown": [],
-      "touchedFiles": 5
+      "touchedFiles": 1
     },
     {
       "name": "types",
@@ -85,7 +85,7 @@
   ],
   "manual": {
     "checklist": "qa/checklists/2026-09-20-vapid-push.md",
-    "checklistCommit": "4ff74b0",
+    "checklistCommit": "7148a0f",
     "checklistSays": "pass",
     "result": "pass",
     "reason": "2026-09-20-vapid-push.md covers this commit and says pass"
