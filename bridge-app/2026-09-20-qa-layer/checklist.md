@@ -21,7 +21,7 @@ there I can work it without Dave relaying anything."
 | 4 | Plant a secret shaped line in a doc, rerun | Lint fails, names the file and rule, prints no value | `no-secret-in-source:env-assignment docs/zz-planted.md: matched a secret shaped literal; the value is not printed`. Removed, green again | yes |
 | 5 | Grep the whole repo for em dashes | Only the law's own two, held in baseline.json | `src/laws/laws.test.ts` 2, nothing else in ts, tsx, js, mjs, md, json, css, sql, sh, py | yes |
 | 6 | Confirm no env file is tracked and no secret literal exists | Nothing | `git ls-files` has no `.env*`; the only key-like text is docs/SETUP_CHECKLIST.md telling Dave where to paste one | yes |
-| 7 | Commit, run clean, publish | `dirty: false`, manual `pass`, folder `bridge-app/2026-09-20-qa-layer/` in basecode-qa | see Notes | see Notes |
+| 7 | Commit, run clean, publish | `dirty: false`, manual `pass`, folder `bridge-app/2026-09-20-qa-layer/` in basecode-qa | `dirty: false`, `onMain: false`, manual `pass` "covers this commit and says pass", scan clean, published `bridge-app/2026-09-20-qa-layer/` with report.json, checklist.md, gaps.md. 15.5s end to end | yes |
 
 ## The standing rules
 

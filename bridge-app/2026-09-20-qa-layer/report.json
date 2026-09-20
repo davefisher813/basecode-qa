@@ -1,20 +1,20 @@
 {
   "repo": "bridge-app",
   "version": "0.1.0",
-  "commit": "2a90ac5",
-  "commitFull": "2a90ac51833aeb9eed29c7d2ce3e5366061a5c0a",
+  "commit": "465f3ad",
+  "commitFull": "465f3ad9267e1d2cf1cfcfc80689bdbefc4e8e7f",
   "branch": "claude/qa-layer",
   "dirty": false,
   "onMain": false,
-  "startedAt": "2026-09-20T21:17:23.268Z",
-  "durationMs": 15497,
+  "startedAt": "2026-09-20T21:17:56.285Z",
+  "durationMs": 15608,
   "result": "pass",
   "stagesNotRun": 0,
   "stages": [
     {
       "name": "tests",
       "result": "pass",
-      "ms": 6818,
+      "ms": 6649,
       "counts": {
         "pass": 731,
         "fail": 0,
@@ -79,13 +79,13 @@
     {
       "name": "types",
       "result": "pass",
-      "ms": 2858,
+      "ms": 2849,
       "errors": []
     },
     {
       "name": "build",
       "result": "pass",
-      "ms": 5737,
+      "ms": 6022,
       "routes": 61,
       "warnings": [],
       "errors": []
