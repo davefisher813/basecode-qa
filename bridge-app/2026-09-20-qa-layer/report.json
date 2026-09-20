@@ -1,0 +1,117 @@
+{
+  "repo": "bridge-app",
+  "version": "0.1.0",
+  "commit": "2a90ac5",
+  "commitFull": "2a90ac51833aeb9eed29c7d2ce3e5366061a5c0a",
+  "branch": "claude/qa-layer",
+  "dirty": false,
+  "onMain": false,
+  "startedAt": "2026-09-20T21:17:23.268Z",
+  "durationMs": 15497,
+  "result": "pass",
+  "stagesNotRun": 0,
+  "stages": [
+    {
+      "name": "tests",
+      "result": "pass",
+      "ms": 6818,
+      "counts": {
+        "pass": 731,
+        "fail": 0,
+        "skipped": 0,
+        "todo": 0,
+        "filesOnDisk": 46,
+        "filesWithTests": 46
+      },
+      "testsPerFile": {
+        "src/laws/actionRun.test.ts": 54,
+        "src/laws/copyLaws.test.ts": 2,
+        "src/laws/dataLaws.test.ts": 6,
+        "src/laws/fitLaws.test.ts": 7,
+        "src/laws/fundraisingLaws.test.ts": 13,
+        "src/laws/governanceLaws.test.ts": 9,
+        "src/laws/kitLaws.test.ts": 11,
+        "src/laws/laws.test.ts": 13,
+        "src/laws/matchingLaws.test.ts": 25,
+        "src/laws/ncaaLaws.test.ts": 36,
+        "src/laws/pageRender.test.ts": 88,
+        "src/laws/schemaLaws.test.ts": 5,
+        "src/laws/stylingLaws.test.ts": 19,
+        "src/lib/data/eligibilityLoop.test.ts": 10,
+        "src/lib/data/fitAdapters.test.ts": 14,
+        "src/lib/data/ncaaAdapters.test.ts": 20,
+        "src/lib/data/undoPlan.test.ts": 15,
+        "src/lib/docai/acceptance.test.ts": 12,
+        "src/lib/docai/gpa.test.ts": 6,
+        "src/lib/docai/magicBytes.test.ts": 11,
+        "src/lib/docai/pipeline.test.ts": 11,
+        "src/lib/docai/provenance.test.ts": 11,
+        "src/lib/docai/realDocuments.test.ts": 17,
+        "src/lib/docai/resolver.test.ts": 9,
+        "src/lib/docai/stubCaller.test.ts": 4,
+        "src/lib/docai/versioning.test.ts": 4,
+        "src/lib/fit/ncaa/approvedCourses.test.ts": 26,
+        "src/lib/fit/ncaa/approvedListPaste.test.ts": 17,
+        "src/lib/fit/ncaa/auditRegressions.test.ts": 22,
+        "src/lib/fit/ncaa/ncaa.test.ts": 38,
+        "src/lib/fit/score.smoke.test.ts": 6,
+        "src/lib/fundraising/rollup.test.ts": 30,
+        "src/lib/governance/giveGet.test.ts": 24,
+        "src/lib/journey.test.ts": 7,
+        "src/lib/org/modules.test.ts": 4,
+        "src/lib/org/roleLabels.test.ts": 7,
+        "src/lib/schools/csv.test.ts": 45,
+        "src/lib/validation/athlete.test.ts": 7,
+        "src/lib/validation/communication.test.ts": 3,
+        "src/lib/validation/contact.test.ts": 5,
+        "src/lib/validation/gift.test.ts": 19,
+        "src/lib/validation/gradingScale.test.ts": 19,
+        "src/lib/validation/member.test.ts": 4,
+        "src/lib/validation/school.test.ts": 6,
+        "src/lib/validation/target.test.ts": 7,
+        "src/lib/validation/visit.test.ts": 3
+      },
+      "filesNotLoaded": [],
+      "filesWithNoTests": [],
+      "failing": [],
+      "problems": []
+    },
+    {
+      "name": "types",
+      "result": "pass",
+      "ms": 2858,
+      "errors": []
+    },
+    {
+      "name": "build",
+      "result": "pass",
+      "ms": 5737,
+      "routes": 61,
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "name": "lint",
+      "result": "pass",
+      "findings": [],
+      "baselined": {
+        "src/laws/laws.test.ts": 2
+      },
+      "baselineTotal": 2,
+      "burndown": [],
+      "touchedFiles": 10
+    }
+  ],
+  "manual": {
+    "checklist": "qa/checklists/2026-09-20-qa-layer.md",
+    "checklistCommit": "8831012",
+    "checklistSays": "pass",
+    "result": "pass",
+    "reason": "2026-09-20-qa-layer.md covers this commit and says pass"
+  },
+  "preview": {
+    "applicable": false,
+    "reason": "no screen or stylesheet touched",
+    "files": []
+  }
+}
