@@ -1,24 +1,24 @@
 {
   "repo": "jarvis-rebuild",
-  "commit": "1e0cf92",
-  "commitFull": "1e0cf929f2e106cb1e6ea05493e7ce472fec17b8",
+  "commit": "a1a6cb2",
+  "commitFull": "a1a6cb2df23921ebe4b64a47df139a766abcd3ea",
   "branch": "claude/open-rows",
   "dirty": false,
   "onMain": false,
-  "startedAt": "2026-09-21T02:33:08.218Z",
-  "durationMs": 326777,
+  "startedAt": "2026-09-21T02:39:48.053Z",
+  "durationMs": 320904,
   "result": "pass",
   "stagesNotRun": 0,
   "stages": [
     {
       "name": "core-types",
       "result": "pass",
-      "ms": 2212
+      "ms": 2082
     },
     {
       "name": "core-tests",
       "result": "pass",
-      "ms": 1911,
+      "ms": 1588,
       "counts": {
         "pass": 95,
         "fail": 0,
@@ -37,18 +37,18 @@
     {
       "name": "app-types",
       "result": "pass",
-      "ms": 59738
+      "ms": 57629
     },
     {
       "name": "app-lint",
       "result": "pass",
-      "ms": 14156,
+      "ms": 12988,
       "warnings": 41
     },
     {
       "name": "app-tests",
       "result": "pass",
-      "ms": 244628,
+      "ms": 242629,
       "counts": {
         "pass": 6771,
         "fail": 0,
@@ -69,12 +69,12 @@
     {
       "name": "app-build",
       "result": "pass",
-      "ms": 3531
+      "ms": 3441
     },
     {
       "name": "app-legal",
       "result": "pass",
-      "ms": 294,
+      "ms": 292,
       "regenerated": [],
       "problems": []
     },
@@ -101,21 +101,16 @@
       },
       "baselineTotal": 297,
       "burndown": [],
-      "touchedFiles": 2
+      "touchedFiles": 1
     }
   ],
   "manual": {
     "checklist": "qa/checklists/2026-09-21-open-rows.md",
-    "checklistCommit": "34ad546",
+    "checklistCommit": "1e0cf92",
     "checklistSays": "pass",
-    "openRows": [
-      {
-        "row": "4",
-        "pass": "(empty)"
-      }
-    ],
-    "result": "open",
-    "reason": "2026-09-21-open-rows.md covers this commit but row 4 is still open ((empty))",
+    "openRows": [],
+    "result": "pass",
+    "reason": "2026-09-21-open-rows.md covers this commit, every row is closed, and it says pass",
     "openElsewhere": [
       {
         "checklist": "qa/checklists/2026-09-21-web-push.md",
