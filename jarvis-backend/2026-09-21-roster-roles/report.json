@@ -1,13 +1,13 @@
 {
   "repo": "jarvis-backend",
   "version": "3.12.0",
-  "commit": "5b5741b",
-  "commitFull": "5b5741b8eda384d2bdecce3ce71e7dcece481e6a",
+  "commit": "f94a301",
+  "commitFull": "f94a30186eddf995cb7b30b449f08ba6a6373ead",
   "branch": "claude/roster-roles",
   "dirty": false,
   "onMain": false,
-  "startedAt": "2026-09-21T23:22:46.225Z",
-  "durationMs": 20335,
+  "startedAt": "2026-09-21T23:23:26.782Z",
+  "durationMs": 20127,
   "result": "pass",
   "stagesNotRun": 0,
   "allowlistFired": [],
@@ -54,15 +54,15 @@
         "healthStatus": 200,
         "version": "3.12.0",
         "familyStore": "memory",
-        "ms": 1578
+        "ms": 1575
       },
       "errors": [],
       "warnings": [
-        "third party deprecation, recorded not failed: (node:2486) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead."
+        "third party deprecation, recorded not failed: (node:3066) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead."
       ],
       "deprecations": [
         {
-          "line": "(node:2486) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.",
+          "line": "(node:3066) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.",
           "ours": false
         }
       ],
@@ -87,11 +87,11 @@
   ],
   "manual": {
     "checklist": "qa/checklists/2026-09-21-roster-roles.md",
-    "checklistCommit": "bc6c240",
+    "checklistCommit": "5b5741b",
     "checklistSays": "pass",
     "openRows": [],
-    "result": "provisional",
-    "reason": "2026-09-21-roster-roles.md is for commit bc6c240, not this one",
+    "result": "pass",
+    "reason": "2026-09-21-roster-roles.md covers this commit, every row is closed, and it says pass",
     "openElsewhere": [
       {
         "checklist": "qa/checklists/2026-09-20-vapid-push.md",

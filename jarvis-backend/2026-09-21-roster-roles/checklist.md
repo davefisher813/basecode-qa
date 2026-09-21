@@ -1,6 +1,6 @@
 # Manual check: role fixes on the live roster
 
-Commit: bc6c240 (roles 23568e7, capo repo mapping 5f2f377, merged at bc6c240; this postscript is the next commit)
+Commit: 5b5741b (roles 23568e7, capo repo mapping 5f2f377, merged to main at bc6c240, postscript 53f0cca)
 Date: 2026-09-21
 Checked by: Claude Code, in the repo
 QA report: published to basecode-qa
@@ -45,8 +45,7 @@ in the role field."
 
 ## What I would tell Dave in one line
 
-Roles are fixed on the branch and nothing is live yet; the live backend still
-shows the old roles until Tony clears the merge.
+Roles are fixed and live on the backend. Nothing for you to do.
 
 ## Notes
 
