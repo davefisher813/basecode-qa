@@ -1,13 +1,13 @@
 {
   "repo": "jarvis-backend",
   "version": "3.12.0",
-  "commit": "619cac1",
-  "commitFull": "619cac183eee65e59ec8604ca170ac67eee91d0e",
+  "commit": "9396e80",
+  "commitFull": "9396e802251f38703a79e56b5766dea2ded351ff",
   "branch": "claude/new-session-gsdk24",
   "dirty": false,
   "onMain": false,
-  "startedAt": "2026-09-21T22:13:04.063Z",
-  "durationMs": 20124,
+  "startedAt": "2026-09-21T22:13:40.327Z",
+  "durationMs": 20085,
   "result": "pass",
   "stagesNotRun": 0,
   "allowlistFired": [],
@@ -54,15 +54,15 @@
         "healthStatus": 200,
         "version": "3.12.0",
         "familyStore": "memory",
-        "ms": 1581
+        "ms": 1576
       },
       "errors": [],
       "warnings": [
-        "third party deprecation, recorded not failed: (node:3362) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead."
+        "third party deprecation, recorded not failed: (node:3943) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead."
       ],
       "deprecations": [
         {
-          "line": "(node:3362) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.",
+          "line": "(node:3943) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.",
           "ours": false
         }
       ],
@@ -87,11 +87,11 @@
   ],
   "manual": {
     "checklist": "qa/checklists/2026-09-21-roster-seat-lock.md",
-    "checklistCommit": "0666419",
+    "checklistCommit": "619cac1",
     "checklistSays": "pass",
     "openRows": [],
-    "result": "provisional",
-    "reason": "2026-09-21-roster-seat-lock.md is for commit 0666419, not this one",
+    "result": "pass",
+    "reason": "2026-09-21-roster-seat-lock.md covers this commit, every row is closed, and it says pass",
     "openElsewhere": [
       {
         "checklist": "qa/checklists/2026-09-20-vapid-push.md",

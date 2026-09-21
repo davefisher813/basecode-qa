@@ -1,6 +1,6 @@
 # Manual check: roster restructure and seat lock, deploy one
 
-Commit: 0666419 (the change; this checklist is the next commit)
+Commit: 619cac1 (the change is 0666419, the checklist 00ae66c, the previews 619cac1; this line update is the next commit)
 Date: 2026-09-21
 Checked by: Claude Code, in the repo
 QA report: published to basecode-qa
@@ -30,7 +30,7 @@ then deploy one."
 | 12 | Engineer key on its own seat path and on another's | own passes and logs key:silvio-dante; other 401; Dave's key passes every seat | connector.test.js | yes |
 | 13 | The state reset | backup to family_config/roster_reset_2026-09-21, both seats at default, other seats untouched, runs once | migrations.test.js; runs at boot only with Firestore, so the live reset happens on the first boot after deploy | yes |
 | 14 | A seat whose instruction file has not landed | start refused with the file named, no run record | runner.test.js for silvio-dante; the six missing files are listed in GAPS.md | yes |
-| 15 | The gate on the committed tree | green, manual pass | 0666419: tests, build, lint pass; 88 tests | yes |
+| 15 | The gate on the committed tree | green, manual pass | 0666419 and 619cac1: tests, build, lint pass; 88 tests; report and previews published to basecode-qa | yes |
 
 ## The standing rules
 
