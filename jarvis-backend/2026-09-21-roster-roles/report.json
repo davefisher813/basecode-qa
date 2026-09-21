@@ -1,13 +1,13 @@
 {
   "repo": "jarvis-backend",
   "version": "3.12.0",
-  "commit": "1cf5e97",
-  "commitFull": "1cf5e97977fa6aa1ed181be118f1b76a97e48aa8",
+  "commit": "bc6c240",
+  "commitFull": "bc6c240c7f0e845f402265188c5de4e09dcd2a57",
   "branch": "claude/roster-roles",
   "dirty": false,
   "onMain": false,
-  "startedAt": "2026-09-21T23:14:34.443Z",
-  "durationMs": 20455,
+  "startedAt": "2026-09-21T23:20:55.362Z",
+  "durationMs": 20471,
   "result": "pass",
   "stagesNotRun": 0,
   "allowlistFired": [],
@@ -54,15 +54,15 @@
         "healthStatus": 200,
         "version": "3.12.0",
         "familyStore": "memory",
-        "ms": 1604
+        "ms": 1578
       },
       "errors": [],
       "warnings": [
-        "third party deprecation, recorded not failed: (node:1146) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead."
+        "third party deprecation, recorded not failed: (node:1828) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead."
       ],
       "deprecations": [
         {
-          "line": "(node:1146) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.",
+          "line": "(node:1828) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.",
           "ours": false
         }
       ],
@@ -87,7 +87,7 @@
   ],
   "manual": {
     "checklist": "qa/checklists/2026-09-21-roster-roles.md",
-    "checklistCommit": "23568e7",
+    "checklistCommit": "5f2f377",
     "checklistSays": "pass",
     "openRows": [],
     "result": "pass",

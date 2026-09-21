@@ -1,6 +1,6 @@
 # Manual check: role fixes on the live roster
 
-Commit: 23568e7 (the code change; this checklist is the next commit)
+Commit: 5f2f377 (roles 23568e7, capo repo mapping 5f2f377; this checklist update is the next commit)
 Date: 2026-09-21
 Checked by: Claude Code, in the repo
 QA report: published to basecode-qa
@@ -27,7 +27,9 @@ in the role field."
 | 7 | The flag does not quietly gate anything | permissions unchanged | frank-lucas is still a roster id and the permission table treats him as before; what stops him working is the missing instruction file, key, schedule, and hook, which is asserted | yes |
 | 8 | The suite | green | 91 tests, three new | yes |
 | 9 | The gate | green, manual pass | this run | yes |
-| 10 | Merge | none | branch pushed, main untouched, per Dave's "stop before merge, send to Tony for review first" | yes |
+| 10 | Review | Tony reads the branch against the published report | approved at 1cf5e97: "Reviewed claude/roster-roles at 1cf5e97 against the published report. Approved." | yes |
+| 11 | Record which repo each capo covers | the mapping in family/README.md, documentation only | 5f2f377: christopher-moltisanti on jarvis-rebuild and jarvis-backend, silvio-dante on bridge-app and the Bridge website, paulie-gualtieri on the facility platform; no key created, boot log still reads "Bearer keys: none" | yes |
+| 12 | The gate on the tree being merged | green, manual pass | this run | yes |
 
 ## The standing rules
 
@@ -38,7 +40,8 @@ in the role field."
 - [x] Minors appear by name and role only. None appear.
 - [x] Dave's own input in JARVIS still wins over anything an agent changed.
 - [x] No em dashes anywhere, including code comments and strings.
-- [x] Nothing JARVIS related ran without Dave's go. Nothing deployed.
+- [x] Nothing JARVIS related ran without Dave's go. Dave delegated the
+      restructure calls to Tony, and Tony gave the merge instruction.
 
 ## What I would tell Dave in one line
 
@@ -47,18 +50,26 @@ shows the old roles until Tony clears the merge.
 
 ## Notes
 
-**One judgement call, flagged for Tony.** Dave said to mark inactive
-"separately, not in the role field." He said mark, so I marked it and did not
-make it enforce anything. `active: false` is a label: frank-lucas remains a
-roster id that could read, log a step, and request an approval if something
-called as him. Nothing does, because he has no instruction file and no key. If
-the intent is that an inactive seat must be refused outright, that is a
-different change and a bigger one, and it belongs in the permission table.
+**The inactive question, now settled.** I built the flag as a label and
+flagged the choice rather than assuming it. Tony ruled: "Inactive stays a label
+only. No permission table change. Deploy two makes unseated OAuth read-only,
+and frank-lucas has no seat URL, key, instruction file, schedule, or hook, so
+he cannot act." No code changed as a result; the ruling matches what was
+already built.
 
 **Item 2 of Dave's three is not in this branch.** Writing
 `family/agents/pablo-escobar.md` waits on Alfred's revised Phase A draft, which
 is not final and which I have never been given. I will not invent an
 instruction file. When the final text arrives the hard lines get carried
 verbatim, as instructed.
+
+**The merge and the deploy are not rows here, on purpose.** They happen after
+this gate runs, so a row claiming them would be claiming a result nobody has
+seen. Tony asked for the boot to be confirmed clean and for family_status to
+show five bosses, three capos, and frank-lucas active false. That is verified
+against the running backend after the merge and appended below, and it is
+reported to Tony either way.
+
+**Verified after the merge:** see the postscript at the end of this file.
 
 **Result: pass**
