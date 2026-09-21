@@ -1,13 +1,13 @@
 {
   "repo": "jarvis-backend",
   "version": "3.12.0",
-  "commit": "26a8a29",
-  "commitFull": "26a8a29697b336650880166a385b51c41824cc8a",
+  "commit": "9b1431a",
+  "commitFull": "9b1431ac7d5c5f22102d50b10c750a12a3e65a99",
   "branch": "claude/new-session-gsdk24",
   "dirty": false,
   "onMain": false,
-  "startedAt": "2026-09-21T02:02:03.713Z",
-  "durationMs": 21552,
+  "startedAt": "2026-09-21T02:46:19.153Z",
+  "durationMs": 21015,
   "result": "pass",
   "stagesNotRun": 0,
   "allowlistFired": [],
@@ -52,15 +52,15 @@
         "healthStatus": 200,
         "version": "3.12.0",
         "familyStore": "memory",
-        "ms": 1792
+        "ms": 1589
       },
       "errors": [],
       "warnings": [
-        "third party deprecation, recorded not failed: (node:6708) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead."
+        "third party deprecation, recorded not failed: (node:13010) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead."
       ],
       "deprecations": [
         {
-          "line": "(node:6708) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.",
+          "line": "(node:13010) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.",
           "ours": false
         }
       ],
@@ -75,7 +75,7 @@
       },
       "baselineTotal": 8,
       "burndown": [],
-      "touchedFiles": 3
+      "touchedFiles": 1
     },
     {
       "name": "types",
@@ -85,10 +85,22 @@
   ],
   "manual": {
     "checklist": "qa/checklists/2026-09-21-retired-key-gap.md",
-    "checklistCommit": "6e2c8d4",
+    "checklistCommit": "158a342",
     "checklistSays": "pass",
+    "openRows": [],
     "result": "pass",
-    "reason": "2026-09-21-retired-key-gap.md covers this commit and says pass"
+    "reason": "2026-09-21-retired-key-gap.md covers this commit, every row is closed, and it says pass",
+    "openElsewhere": [
+      {
+        "checklist": "qa/checklists/2026-09-20-vapid-push.md",
+        "rows": [
+          {
+            "row": "9",
+            "pass": "pending device"
+          }
+        ]
+      }
+    ]
   },
   "preview": {
     "applicable": false,
