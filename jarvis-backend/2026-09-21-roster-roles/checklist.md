@@ -1,6 +1,6 @@
 # Manual check: role fixes on the live roster
 
-Commit: 5f2f377 (roles 23568e7, capo repo mapping 5f2f377; this checklist update is the next commit)
+Commit: bc6c240 (roles 23568e7, capo repo mapping 5f2f377, merged at bc6c240; this postscript is the next commit)
 Date: 2026-09-21
 Checked by: Claude Code, in the repo
 QA report: published to basecode-qa
@@ -70,6 +70,30 @@ show five bosses, three capos, and frank-lucas active false. That is verified
 against the running backend after the merge and appended below, and it is
 reported to Tony either way.
 
-**Verified after the merge:** see the postscript at the end of this file.
-
 **Result: pass**
+
+## Postscript, verified against the running backend
+
+Merged to main at bc6c240 on Tony's instruction. Railway deployment
+3bf8e3ba, created 23:21:27 UTC, SUCCESS at 23:22:08.
+
+Boot is clean. No error beyond the pre-existing npm config warning that every
+boot prints. Firestore ready, connector enabled, Gmail and Drive connected,
+schedules and events still off, bearer keys still none. No roster reset line,
+which is correct: that step ran once on 9396e80 and its marker document holds.
+
+family_status, read from the live connector at 23:22, not from the diff:
+
+| seat | role | active |
+|---|---|---|
+| michael-corleone | boss | true |
+| tony-soprano | boss | true |
+| christopher-moltisanti | capo | true |
+| silvio-dante | capo | true |
+| paulie-gualtieri | capo | true |
+| pablo-escobar | boss | true |
+| paulie-cicero | boss | true |
+| frank-lucas | boss | false |
+
+Five bosses, three capos, frank-lucas active false. Five retired ids still
+listed for history. Seven pending approvals intact across the change.
