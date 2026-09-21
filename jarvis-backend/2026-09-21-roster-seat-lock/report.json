@@ -1,13 +1,13 @@
 {
   "repo": "jarvis-backend",
   "version": "3.12.0",
-  "commit": "00ae66c",
-  "commitFull": "00ae66cd70e362c010a5eba140353fe325961f14",
+  "commit": "619cac1",
+  "commitFull": "619cac183eee65e59ec8604ca170ac67eee91d0e",
   "branch": "claude/new-session-gsdk24",
   "dirty": false,
   "onMain": false,
-  "startedAt": "2026-09-21T22:12:03.952Z",
-  "durationMs": 20343,
+  "startedAt": "2026-09-21T22:13:04.063Z",
+  "durationMs": 20124,
   "result": "pass",
   "stagesNotRun": 0,
   "allowlistFired": [],
@@ -54,15 +54,15 @@
         "healthStatus": 200,
         "version": "3.12.0",
         "familyStore": "memory",
-        "ms": 1599
+        "ms": 1581
       },
       "errors": [],
       "warnings": [
-        "third party deprecation, recorded not failed: (node:2590) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead."
+        "third party deprecation, recorded not failed: (node:3362) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead."
       ],
       "deprecations": [
         {
-          "line": "(node:2590) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.",
+          "line": "(node:3362) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.",
           "ours": false
         }
       ],
@@ -77,7 +77,7 @@
       },
       "baselineTotal": 8,
       "burndown": [],
-      "touchedFiles": 42
+      "touchedFiles": 48
     },
     {
       "name": "types",
@@ -90,8 +90,8 @@
     "checklistCommit": "0666419",
     "checklistSays": "pass",
     "openRows": [],
-    "result": "pass",
-    "reason": "2026-09-21-roster-seat-lock.md covers this commit, every row is closed, and it says pass",
+    "result": "provisional",
+    "reason": "2026-09-21-roster-seat-lock.md is for commit 0666419, not this one",
     "openElsewhere": [
       {
         "checklist": "qa/checklists/2026-09-20-vapid-push.md",
@@ -107,7 +107,14 @@
   "preview": {
     "applicable": true,
     "reason": "touched family/approve.html",
-    "files": [],
-    "missing": true
+    "files": [
+      "qa/previews/roster-seat-lock/agents-dark.png",
+      "qa/previews/roster-seat-lock/agents-light.png",
+      "qa/previews/roster-seat-lock/approvals-dark.png",
+      "qa/previews/roster-seat-lock/approvals-light.png",
+      "qa/previews/roster-seat-lock/today-dark.png",
+      "qa/previews/roster-seat-lock/today-light.png"
+    ],
+    "missing": false
   }
 }

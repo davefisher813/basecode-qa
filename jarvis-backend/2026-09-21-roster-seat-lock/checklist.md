@@ -4,7 +4,7 @@ Commit: 0666419 (the change; this checklist is the next commit)
 Date: 2026-09-21
 Checked by: Claude Code, in the repo
 QA report: published to basecode-qa
-Preview: not applicable, no new screen. The approve page gained a retired name lookup only.
+Preview: qa/previews/roster-seat-lock/ (the approve page gained a retired name lookup only; shots taken because approve.html was touched)
 
 **What Dave asked for, in his words (through Clemenza):** "Dave approved both
 items. You have the go." Items: the seat bound connector design as specified
@@ -47,6 +47,16 @@ then deploy one."
 - [x] No em dashes anywhere, including code comments and strings.
 - [x] Nothing JARVIS related ran without Dave's go. Dave's go came through
       Clemenza for both items. The reset runs on the first boot after deploy.
+
+## Previews
+
+Fictional fixtures, 390px, light and dark.
+
+| File | Look at |
+|---|---|
+| agents-light.png, agents-dark.png | the tree renders the fixture's seats with names, families, and reportsTo resolved; nothing shows a raw id |
+| approvals-light.png, approvals-dark.png | the approval cards name their agent; the three buttons are unchanged |
+| today-light.png, today-dark.png | the log list is unchanged |
 
 ## What I would tell Dave in one line
 
