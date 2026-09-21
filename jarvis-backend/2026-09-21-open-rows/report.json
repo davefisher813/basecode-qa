@@ -1,0 +1,119 @@
+{
+  "repo": "jarvis-backend",
+  "version": "3.12.0",
+  "commit": "158a342",
+  "commitFull": "158a3422ab1b77c8f701d821b1068bc22ba67b58",
+  "branch": "claude/new-session-gsdk24",
+  "dirty": false,
+  "onMain": false,
+  "startedAt": "2026-09-21T02:39:18.701Z",
+  "durationMs": 21274,
+  "result": "pass",
+  "stagesNotRun": 0,
+  "allowlistFired": [],
+  "stages": [
+    {
+      "name": "tests",
+      "result": "pass",
+      "counts": {
+        "pass": 67,
+        "fail": 0,
+        "skipped": 0,
+        "todo": 0,
+        "cancelled": 0,
+        "filesOnDisk": 12,
+        "filesLoaded": 12,
+        "filesWithTests": 12
+      },
+      "filesNotLoaded": [],
+      "filesWithNoTests": [],
+      "testsPerFile": {
+        "test/approve.test.js": 4,
+        "test/connector.test.js": 9,
+        "test/family-api.test.js": 3,
+        "test/inbox.test.js": 8,
+        "test/mcp-tools.test.js": 4,
+        "test/no-full-replace.test.js": 2,
+        "test/oauth-refresh.test.js": 6,
+        "test/permissions.test.js": 6,
+        "test/qa-exposure.test.js": 1,
+        "test/runner.test.js": 10,
+        "test/server.smoke.test.js": 4,
+        "test/triggers.test.js": 10
+      },
+      "failing": [],
+      "problems": []
+    },
+    {
+      "name": "build",
+      "result": "pass",
+      "checked": 42,
+      "boot": {
+        "healthStatus": 200,
+        "version": "3.12.0",
+        "familyStore": "memory",
+        "ms": 1595
+      },
+      "errors": [],
+      "warnings": [
+        "third party deprecation, recorded not failed: (node:6959) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead."
+      ],
+      "deprecations": [
+        {
+          "line": "(node:6959) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.",
+          "ours": false
+        }
+      ],
+      "allowlistFired": []
+    },
+    {
+      "name": "lint",
+      "result": "pass",
+      "findings": [],
+      "baselined": {
+        "sw.js": 8
+      },
+      "baselineTotal": 8,
+      "burndown": [],
+      "touchedFiles": 2
+    },
+    {
+      "name": "types",
+      "result": "not_applicable",
+      "reason": "plain JavaScript, no type checker in the repo"
+    }
+  ],
+  "manual": {
+    "checklist": "qa/checklists/2026-09-21-open-rows.md",
+    "checklistCommit": "e288a5c",
+    "checklistSays": "pass",
+    "openRows": [],
+    "result": "pass",
+    "reason": "2026-09-21-open-rows.md covers this commit, every row is closed, and it says pass",
+    "openElsewhere": [
+      {
+        "checklist": "qa/checklists/2026-09-20-vapid-push.md",
+        "rows": [
+          {
+            "row": "9",
+            "pass": "pending device"
+          }
+        ]
+      },
+      {
+        "checklist": "qa/checklists/2026-09-21-retired-key-gap.md",
+        "rows": [
+          {
+            "row": "4",
+            "pass": "(empty)"
+          }
+        ]
+      }
+    ]
+  },
+  "preview": {
+    "applicable": false,
+    "reason": "no html or css touched",
+    "files": []
+  }
+}
