@@ -1,24 +1,24 @@
 {
   "repo": "jarvis-rebuild",
-  "commit": "6456b75",
-  "commitFull": "6456b759d9775e2710ef423e0811aa24ba8e35ce",
+  "commit": "34ad546",
+  "commitFull": "34ad54654c01e3aa0c78a4d91200d7c867b4e564",
   "branch": "claude/web-push",
   "dirty": false,
   "onMain": false,
-  "startedAt": "2026-09-21T01:55:23.659Z",
-  "durationMs": 306942,
-  "result": "fail",
+  "startedAt": "2026-09-21T02:08:26.036Z",
+  "durationMs": 318208,
+  "result": "pass",
   "stagesNotRun": 0,
   "stages": [
     {
       "name": "core-types",
       "result": "pass",
-      "ms": 2189
+      "ms": 2125
     },
     {
       "name": "core-tests",
       "result": "pass",
-      "ms": 1859,
+      "ms": 1591,
       "counts": {
         "pass": 95,
         "fail": 0,
@@ -37,26 +37,26 @@
     {
       "name": "app-types",
       "result": "pass",
-      "ms": 55767
+      "ms": 54868
     },
     {
       "name": "app-lint",
       "result": "pass",
-      "ms": 12462,
+      "ms": 12580,
       "warnings": 41
     },
     {
       "name": "app-tests",
       "result": "pass",
-      "ms": 230362,
+      "ms": 242537,
       "counts": {
-        "pass": 6525,
+        "pass": 6771,
         "fail": 0,
         "skipped": 5,
         "todo": 0,
-        "filesOnDisk": 569,
-        "filesInResults": 569,
-        "filesWithTests": 569
+        "filesOnDisk": 591,
+        "filesInResults": 591,
+        "filesWithTests": 591
       },
       "skippedPerFile": {
         "jarvis-app/tools/ai-harness.test.ts": 5
@@ -69,25 +69,19 @@
     {
       "name": "app-build",
       "result": "pass",
-      "ms": 3681
+      "ms": 3912
     },
     {
       "name": "app-legal",
       "result": "pass",
-      "ms": 333,
+      "ms": 323,
       "regenerated": [],
       "problems": []
     },
     {
       "name": "house",
-      "result": "fail",
-      "findings": [
-        {
-          "rule": "no-em-dash",
-          "file": "jarvis-app/src/laws/laws.test.ts",
-          "detail": "2 em dashes in a file this change touched. A baselined file loses its grandfathering the moment you edit it."
-        }
-      ],
+      "result": "pass",
+      "findings": [],
       "baselined": {
         "docs/audit-page.html": 49,
         "docs/ADHD_VISUAL_AUDIT_2026_08_21.md": 49,
@@ -107,19 +101,19 @@
       },
       "baselineTotal": 297,
       "burndown": [],
-      "touchedFiles": 100
+      "touchedFiles": 20
     }
   ],
   "manual": {
     "checklist": "qa/checklists/2026-09-21-web-push.md",
-    "checklistCommit": "190be7b",
+    "checklistCommit": "f3fde6e",
     "checklistSays": "pass",
     "result": "pass",
     "reason": "2026-09-21-web-push.md covers this commit and says pass"
   },
   "preview": {
     "applicable": true,
-    "reason": "touched jarvis-app/src/App.tsx, jarvis-app/src/bigger/BiggerPictureFlow.tsx, jarvis-app/src/booking/BookingImportPump.tsx, jarvis-app/src/booking/CancelBookingSheet.tsx, jarvis-app/src/booking/DayOffSheet.tsx and 21 more",
+    "reason": "touched jarvis-app/src/settings/NotificationsPage.tsx",
     "files": [],
     "missing": true
   }
