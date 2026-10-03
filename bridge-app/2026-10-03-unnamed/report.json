@@ -1,17 +1,15 @@
 {
   "repo": "bridge-app",
   "version": "0.1.0",
-  "commit": "3fb1fdf",
-  "commitFull": "3fb1fdf3745f7466a5f1124d42b6e3e9448c58bf",
-  "branch": "claude/e2e-and-action-tests",
-  "remoteBranches": [
-    "origin/claude/e2e-and-action-tests"
-  ],
-  "shipped": true,
+  "commit": "7d2371d",
+  "commitFull": "7d2371d9b6f086f9339f9bc44cf149a5d0d4bdc2",
+  "branch": "claude/qa-round-2",
+  "remoteBranches": [],
+  "shipped": false,
   "dirty": false,
   "onMain": false,
-  "startedAt": "2026-10-03T15:02:25.342Z",
-  "durationMs": 92582,
+  "startedAt": "2026-10-03T15:28:28.070Z",
+  "durationMs": 36511,
   "result": "pass",
   "stagesNotRun": 0,
   "allowlistFired": [],
@@ -20,7 +18,7 @@
       "name": "tests",
       "result": "pass",
       "counts": {
-        "pass": 2311,
+        "pass": 2327,
         "fail": 0,
         "skipped": 0,
         "todo": 0,
@@ -55,10 +53,10 @@
         "src/laws/moreLaws.test.ts": 10,
         "src/laws/ncaaLaws.test.ts": 36,
         "src/laws/orgCrudLaws.test.ts": 53,
-        "src/laws/otherActions.test.ts": 72,
+        "src/laws/otherActions.test.ts": 75,
         "src/laws/pageRender.test.ts": 797,
         "src/laws/publicPaths.test.ts": 2,
-        "src/laws/qaFixes.test.ts": 12,
+        "src/laws/qaFixes.test.ts": 25,
         "src/laws/referenceAutofillLaws.test.ts": 17,
         "src/laws/referenceCrudLaws.test.ts": 33,
         "src/laws/schemaLaws.test.ts": 5,
@@ -141,7 +139,7 @@
             "location": "/login"
           }
         },
-        "ms": 1331
+        "ms": 1372
       },
       "errors": [],
       "warnings": [],
@@ -155,8 +153,8 @@
       "baselined": {},
       "baselineTotal": 0,
       "burndown": [],
-      "touchedFiles": 20,
-      "filesScanned": 595
+      "touchedFiles": 15,
+      "filesScanned": 599
     },
     {
       "name": "types",
